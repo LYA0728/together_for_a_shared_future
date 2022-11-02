@@ -45,7 +45,8 @@ body {
 }
 
 body {
-    background-image: url("https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/htmlbg.png");
+    background-image: url("https://fastly.jsdelivr.net/gh/LYA0728/dataJournalism/website/mediaResource/htmlbg.png");
+    /* background-image: url("https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/htmlbg.png"); */
 }
 
 
@@ -260,21 +261,23 @@ div#forword+div.container>img {
 }
 
 #parallaxPage1 {
-    background-image: url('https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/parallaxPage1Large.jpg');
+    /*background-image: url('https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/parallaxPage1Large.jpg');
+    */
+    background-image: url("https://fastly.jsdelivr.net/gh/LYA0728/dataJournalism/website/mediaResource/parallaxPage1Large.jpg");
     background-color: #000;
     filter: Alpha(Opacity=60);
     opacity: 0.6;
 }
 
 #parallaxPage2 {
-    background-image: url('https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/parallaxPage2Large.jpg');
+    background-image: url('https://fastly.jsdelivr.net/gh/LYA0728/dataJournalism/website/mediaResource/parallaxPage2Large.jpg');
     background-color: #000;
     filter: Alpha(Opacity=60);
     opacity: 0.6;
 }
 
 #parallaxPage3 {
-    background-image: url('https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/hand-gacaelarge.jpg');
+    background-image: url('https://fastly.jsdelivr.net/gh/LYA0728/dataJournalism/website/mediaResource/hand-gacaelarge.jpg');
     background-color: #000;
     filter: Alpha(Opacity=60);
     opacity: 0.6;
@@ -433,7 +436,7 @@ div.doubleDiv i{
 
 /* 按钮提示 */
 div.tips > div{
-    background-image: url("https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/tips.svg");
+    background-image: url("https://fastly.jsdelivr.net/gh/LYA0728/dataJournalism/website/mediaResource/tips.svg");
     width: 150px;
     font-size:14px;
     padding: 12px;

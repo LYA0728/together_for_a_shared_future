@@ -946,7 +946,7 @@ plot.prototype = {
 
             let barWidth = $(".barItem").eq(i).width(), barHeight = $(".barItem").eq(i).height();
             /* divs = `<div class="circle" style="width:${Math.floor(barWidth / 4)}px;height:${Math.floor(barWidth / 4)}px"></div>`; */
-            img = `<img class="img-responsive" style="width:${Math.floor(barWidth / 4)}px;height:${Math.floor(barWidth / 4)}px" src='https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/${fileName[i]}.svg'>`;
+            img = `<img class="img-responsive" style="width:${Math.floor(barWidth / 4)}px;height:${Math.floor(barWidth / 4)}px" src='https://fastly.jsdelivr.net/gh/LYA0728/dataJournalism/website/mediaResource/${fileName[i]}.svg'>`;
             let Num = Math.floor(barHeight / (Math.floor(barWidth / 4)));
             $(".barItem").eq(i).html(img.repeat(4 * Num));
 
@@ -1015,7 +1015,7 @@ plot.prototype = {
                 .attr('height', (d) => { return d.radius * 1.5 })
                 .attr('x', (d) => { return d.x - d.radius / 1.3 })
                 .attr('y', (d) => { return d.y - d.radius / 1.3 })
-                .attr("xlink:href", (d) => { return `https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/${d["fileName"]}` })
+                .attr("xlink:href", (d) => { return `https://fastly.jsdelivr.net/gh/LYA0728/dataJournalism/website/mediaResource/${d["fileName"]}` })
                 .attr("preserveAspectRatio", "none meet");
 
 

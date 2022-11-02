@@ -184,7 +184,7 @@ document.querySelector("div#backToTop > img").onclick = function(){
         document.documentElement.scrollTop = $(document).height()*i;
         i-=0.1
         index -=1
-        console.log(index)
+        // console.log(index)
     }
 }
 
