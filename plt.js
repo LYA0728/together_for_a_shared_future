@@ -312,7 +312,7 @@ new plt(document.querySelector("div#stackBarWithLine"),
 
 new plt(document.querySelector("div#scatterHeatMap"),
     dataInfo = {
-        url: 'https://raw.githubusercontents.com/LYA0728/dataJournalism/main/data/scatter_df_long.csv',
+        url: 'https://fastly.jsdelivr.net/gh/LYA0728/dataJournalism/data/scatter_df_long.csv',
         x: "date",
         y: "hour"
     },
