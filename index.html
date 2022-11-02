@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互助中的上海疫情困难与善意</title>
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/LYA0728/CND/bootstrap.min.css">
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="plot.css">
+</head>
+<script src="https://fastly.jsdelivr.net/gh/LYA0728/CND/jquery.min.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/LYA0728/CND/d3.v6.js"></script>
+<!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+<script src="https://fastly.jsdelivr.net/gh/LYA0728/CND/jquery.easing.compatibility.min.js"></script>
+
+<body>
+    <!-- 封面 -->
+    <div id="cover">
+        <!-- <img src="./img/coverTop.png" alt="" class="img-responsive">
+        <div>
+            <p>19972条求助信息:</p>
+            <p>&emsp;&emsp;互助中的上海疫情困难与善意</p>
+        </div>
+        <img src="./img/coverBottom.png" alt="" class="img-responsive"> -->
+
+        <div>
+            <p>19972条求助信息</p>
+            <p>互助中的上海疫情困难与善意</p>
+            <div class="doubleDiv">
+                <div></div>
+                <div>
+                    <p class="text-center">看见呼救</p>
+                    <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/cursor.svg" alt="" class="img-responsive">
+                </div>
+                <!-- <img src="./img/cursor.svg" alt=""> -->
+            </div>
+            <!-- <img src="./img/cursor.svg" alt=""> -->
+        </div>
+        <div><img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/cover.png" alt="" class="img-responsive center-block"></div>
+    </div>
+    <!-- <div class="date text-center"><p></p></div> -->
+
+    
+    <div id="nav">
+        <div class="doubleDiv navActivate">
+            <div></div>
+            <div><a href="#forword">前言</a></div>
+        </div>
+
+        <div class="doubleDiv">
+            <div></div>
+            <div><a href="#parallaxPage1">开端</a></div>
+        </div>
+
+        <div class="doubleDiv">
+            <div></div>
+            <div><a href="#parallaxPage2">困境</a></div>
+        </div>
+
+        <div class="doubleDiv">
+            <div></div>
+            <div><a href="#parallaxPage3">思考</a></div>
+        </div>
+
+        <div class="doubleDiv">
+            <div></div>
+            <div><a href="#ending">尾声</a></div>
+        </div>
+
+        
+    </div>
+    <!-- 前导语部分 -->
+    <section>
+        <div id="forword" class="container">
+            <!-- 左边图片 -->
+            <div class="img">
+                <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/leftBuilding.png" alt="" class="img-responsive">
+                <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/leftBuilding.png" alt="" class="img-responsive">
+            </div>
+
+            <!-- 中间文字 -->
+            <div class="text-center">
+                <div class="text text-center justify-center">
+                    <p><span>2022年6月1日当天凌晨开始</span></p>
+                    <p><span>上海“全面恢复生产生活秩序”</span></p>
+                    <br>
+
+                    <p><span>时隔61天,人们走出家门,走出小区</span></p>
+                    <p><span>走在曾经空旷的马路上</span></p>
+                    <br>
+
+                    <p><span>这一天，对上海意义非凡</span></p>
+                    <p><span>外滩的零点钟声响起</span></p>
+                    <p><span>人们不约而同地涌向外滩</span></p>
+                    <p><span>行人拍照</span></p>
+                    <p><span>汽车鸣笛庆祝</span></p>
+                    <br>
+
+                    <p><span>就在前一天晚上</span></p>
+                    <p><span>“我们来帮你·上海抗疫互助”——</span></p>
+                    <!-- <p><span>在线互助网站正式关闭</span></p> -->
+                    <p><span>上海疫情期间的两个在线互助网站正式关闭</span></p>
+                    <p><span>网页上停留着长长的致谢名单</span></p>
+                    <p>
+                        <span class="bg-light text-bold">
+                            导航栏上的“求助”消失了
+                        </span>
+                    </p>
+                    <p>
+                        <span class="bg-light text-bold">
+                            只剩下“我们”
+                        </span>
+                    </p>
+                    <br>
+
+                    <p>
+                        <span class="text-highlighting2">
+                            截止5月1日晚
+                        </span>
+                    </p>
+                    <p>
+                        <span>FT同悦志愿者的网站</span>
+                        <span class="text-highlighting2">
+                            上线25天
+                        </span>
+                    </p>
+                    <p><span>总访问量突破千万</span></p>
+                    <p><span>一共收到了</span>
+                        <span class="text-highlighting2">
+                            12289条求助
+                        </span>
+                    </p>
+                    <p><span>解决了</span>
+                        <span class="text-highlighting2">
+                            11119条
+                        </span>
+                    </p>
+                    <p><span>稻侯er的求助网站</span></p>
+                    <p><span>至</span>
+                        <span class="text-highlighting2">5月17日也</span>
+                        <span>收到超过<span class="text-highlighting2">7000+</span>求助</span>
+                    </p>
+
+                    <p><span>解决率超过60%。</span></p><br>
+                </div>
+            </div>
+
+            <!-- 右边图片 -->
+            <div class="img">
+                <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/rightBuilding.png" alt="" class="img-responsive">
+                <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/rightBuilding.png" alt="" class="img-responsive">
+            </div>
+        </div>
+
+        <!-- 网站界面介绍 -->
+        <div class="container">
+            <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/website1.png" alt="" class="shadow img-responsive center-block">
+            <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/website2.png" alt="" class="shadow img-responsive center-block">
+            <p class="text-center">
+                <span class="text-explain">
+                    <i>稻侯er网站界面及FT同悦志愿者“我们来帮你”网站界面</i>
+                </span>
+            </p><br>
+            
+
+            <div class="text">
+                <p><span>上海，一座城市与2500万人，静止了六十一天。（2022年4月1日—2022年6月1日）</span></p><br>
+
+                <p><span>以“FT同悦”和“稻侯er”为代表的民间互助组织是抗疫中不可或缺的力量。在线互助网站是如何发起的？网站上都有着上海民众怎样的需求？这些需求的解决状况又如何？</span></p>
+                <br>
+
+                <p><span>带着这些问题，<span
+                            class="bg-light text-bold">我们点开网站上一条条真实的求助信息，试图回溯封城期间上海民众间的困难与守望相助。</span></span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+   <!--  <div class="flourish-embed flourish-parliament" data-src="visualisation/10631289"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
+
+    <!-- 过渡页1 -->
+    <!-- 过渡封面1 -->
+    <div class="parallax container-fluid" id="parallaxPage1">
+        <div class="text-center text-capitalize">
+            开端：看见更多需求<br>
+            See More Demands
+        </div>
+    </div>
+
+    <!-- 第一部分 -->
+    <section>
+        <div class="container">
+            <div class="text">
+                <p><span>上海封控伊始，留学归来的85后刘思谈看到小区里的志愿者开始用共享文档收集信息，但受限于传播范围，只能解决一小部分问题。</span></p><br>
+
+                <p><span class="bg-light">他想，<span>是不是可以做一个网站，将每个人的求助信息让更多人看见？</span></span></p><br>
+
+                <p><span>他借鉴了一个叫“后缀93”的网站，和技术员一起搭建了一个网站：让任何人都可以发布求助信息，留下地址和电话，并打上紧急程度的标签。</span></p><br>
+
+                <p><span>4月2日，域名为“daohouer”的在线求助网站正式上线。</span></p><br>
+
+                <p><span>同样被封控在小区，开始做志愿者的互联网人老王突然意识到自己可以做一个信息互助平台，来帮助缓解上海就医困难的问题。他牵线曾联系参与过陕西暴雨救援和吉林抗疫的FT同悦志愿者团队，双方一拍即合，着手做一个网站，就叫：
+                    </span></p><br>
+
+                <p><span class="bg-light"><span>『我们来帮你·上海抗疫互助』</span></span></p><br>
+
+                <p><span>登录这个网站，求助者只需要在网页留下姓名、联系方式和求助内容，与“稻侯er”网站人工分拣的方式不同，“FT同悦”平台由算法对内容进行摘要分类，并判断紧急程度，最终的数据由志愿者对接处理。</span>
+                </p><br>
+
+                <p><span>4月6日下午6点，网站正式上线，</span><span>首页展示着《权力与荣耀》的一句话：</span></p><br>
+
+                <p class="text-center"><span class="bg-light">“总有一个时刻，门会敞开，未来会走进来。”</span></p><br>
+
+                <p><span>
+                    就这样，由两个不同发起人创立的抗疫互助网站，汇集在一起，在上海封城的两个月里，记录并解决了上海市民提出的近两万条需求。</span>
+                </p>   
+            </div>
+
+            <div class="text">
+                <p><span>这些求助分别来自哪里？</span></p>
+            </div>
+
+            <div id="mapPlotContainer">
+                <!-- <div class="plotTitle"></div>
+                <div class="plotMain"></div>
+                <div class="plotFooter"></div> -->
+            </div>
+            <br>
+            <div class="text-center text">
+                <i class="text-explain">
+                    地图求助数据源自daohouer.com，共爬取4255条求助详情，其中留下详细地址的有1720条。经过处理后，图中显示的是1720条求助的具体分布区域。
+                </i>
+            </div>
+
+            <!-- <div class="plotly text">
+                <iframe src="./heatMapPlot.html" frameborder="0"></iframe>
+            </div> -->
+
+            <!-- <div class="text">
+                <p><span>就这样，两个由不同发起人创立的抗疫互助网站，汇集在一起，在上海封城的两个月里，记录解决了上海市民提出的近两万条需求。</span></p><br>
+
+                <p><span class="text-highlighting2">4月12日</span><span>，上海新增本土确诊病例<span
+                            class="text-highlighting2">1189例</span>，本土无症状感染者<span
+                            class="text-highlighting2">25141例</span>，紧接着连续三天，上海本土确诊数一路上升，
+                    </span></p><br>
+
+                <p><span>
+                        <span class="text-highlighting2">4月15日单日高达3590例</span>，网站平台的求助量也随着疫情的恶化而急剧上升，<span
+                            class="bg-light">“稻侯er”自4月2日建站以来迎来它的第一次高峰挑战。</span>
+                    </span>
+                </p>
+            </div> -->
+        </div>
+
+
+        <!-- <div class="tips container">
+            <div>点击此处可切换查看上海各区情况</div>
+        </div> -->
+        <div class="ParallaxFloating container">
+            <div class="graph grid-container" id="stackBarWithLine"></div>
+            <br><br>
+            <br><br>
+            <br><br>
+
+            <div class="floatItem text">
+                <p><span>
+                    4月12日，上海新增本土确诊病例1189例，本土无症状感染者25141例，紧接着连续三天，上海本土确诊病例一路上升，4月15日单日高达3590例，网站平台的求助量也随着疫情的恶化而急剧上升，
+                    <span class="bg-light">“稻侯er”自4月2日建站以来迎来它的第一次高峰挑战。</span>
+                </span></p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+
+        <div class="ParallaxFloating container">
+            <!-- <div class="tips">
+                <div>点击此处可切换查看上海各区情况</div>
+            </div> -->
+            <div class="graph grid-container" id="scatterHeatMap"></div>
+            <!-- <div class="text-center text">
+                <i class="text-explain">
+                    x轴为日期，（y轴为一天24小时），点的大小代表求助的数量，点越大，代表该时段的求助越多
+                </i>
+            </div> -->
+            <br>
+            <br>
+            
+
+            <div class="floatItem text">
+                <p><span>
+                        平日里的求助量比较均衡地分布在白天时段，
+                        但在疫情最严峻的几日里，
+                    </span>
+                    <span class='bg-light'>
+                        凌晨时段也增加了不少求助提交
+                    </span>。
+                </p>
+            </div>
+
+            <div class="floatItem text">
+                <p><span>
+                    经过人工编码，“稻侯er”互助网站记录的4255条求助中，有<span class="bg-light">1169条为药物需求(27.5%)，725条为就医需求(17.2%)，123条为家用医疗器械需求(2.9%)，1557条为物资及其他需求(36.9%)
+                    </span>
+                    
+                </span></p>
+            </div>
+
+            <div class="floatItem text">
+                <p>
+                    <span>
+                        除了数量庞大，属于大部分民众生活刚需的物资类需求，<span
+                            class='bg-light'>来自其他疾病患者的需求尤为醒目</span>，这也是所有求助中最为紧急的一部分存在。
+                    </span>
+                </p>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- <div class="container">
+            <p>
+                <span>1728条求助，分别都来自哪里?</span>
+            </p>
+        </div> -->
+
+        <!-- <div class="container graph grid-container" id="mapPlotContainer">
+            <div class="plotTitle">
+                <p>在线求助分布</p>
+            </div>
+            <div class="plotMain" id="mapPlot"></div>
+            <div class="plotFooter"></div>
+        </div> -->
+        <br>
+        <br>
+
+        <div class="text">
+            <p><span>由于上海实行大面积的交通封控，就医成了无数病人的一大难题。</span></p>
+        </div>
+
+        <div class="ParallaxFloating container">
+            <div id="iconBar"></div>
+            <!-- <div class="graph grid-container" id="simpleBarChartContainer">
+                <div class="plotTitle">
+                    <p>在线求助分布</p>
+                </div>
+                <div class="plotMain" id="simpleBarChart"></div>
+                <div class="plotFooter"></div>
+            </div> -->
+            <br>
+            <br>
+
+            <div class="floatItem text">
+                <p><span>急诊就医的求助数量最多，与之相关的就医车辆配送也因管控而紧缺。</span></p>
+            </div>
+
+            <div class="floatItem text">
+                <p><span>
+                        而对于基础性疾病患者来说，他们需要连续到医院复查、进行“化疗放疗”“血液透析”等，疫情带来的中断意味着肿瘤扩散、生命衰竭……透析患者中流行这样一句话：
+                        <span class='bg-light text-Italics'>
+                            <i>“如果我感染新冠，我存活率有百分之九十几，但如果不透析，我们存活率是零。”</i>
+                        </span>
+                    </span></p>
+            </div>
+
+            <div class="floatItem text">
+                <p><span>除了去医院治病，确诊数的急剧增加给新冠阳性隔离收治带来了极大的压力，医院床位不足，方舱隔离点不够，许多阳性患者无处被收治，无法被转运。还有部分社区缺乏核酸检测人手，居民无法确认自己的核酸结果而惴惴不安。</span></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <!-- <div class="container graph grid-container" id="forceCircleContainer">
+            <div class="plotTitle">
+                <p>家用医疗物品需求</p>
+            </div>
+            <div class="plotMain" id="forceCircle">
+                <svg></svg>
+            </div>
+            <div class="plotFooter"></div>
+        </div> -->
+        
+
+        <div class="text">
+            <p><span class='bg-light'>困扰病人的不只就医，还有家用医疗物品的缺乏。</span></p><br>
+
+            <p><span>拉拉裤（45.6%）、造口袋（9.4%）、导尿管和吸痰管（16.1%）的求助最多，需要他们的大多是行动不便，没有自理能力的病人，只有靠外在的医疗物品才能维持日常的排泄等基本功能。</span></p><br>
+
+            <p><span>拐杖、护踝等物理支架也是一些人行动的必要品：一位求助者的孩子脚踝骨折一个多月，需要护踝进行复健，否则肌肉的萎缩可能影响未来走路或致残。</span></p><br>
+        </div>
+
+        <div id="forceCircle2"></div>
+        <br>
+        <br>
+    </section>
+
+    <!-- 过渡页2 -->
+    <!-- 过渡封面2 -->
+    <div class="parallax container-fluid" id="parallaxPage2">
+        <div class="text-center text-capitalize">
+            困境：封控下的人间百态<br>
+            The world under isolation
+        </div>
+    </div>
+
+    <section>
+        <div class="centerContainer">
+            <div class="titleContainer">
+            <img class="img-responsive" alt="" src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/titleIcon.svg">
+            <p>基础疾病患者：等待与希望</p>
+            </div>
+        </div>
+
+        <div class="text">
+            <p><span>
+                <span class="bg-light ph3 text-bold">“我不想失去父亲！” </span>
+                </span></p>
+
+        </div>
+
+        <div class="container doubleDivContainer">
+            <div><img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/phoneIcon.svg" alt="" class="img-responsive center-block"></div>
+            <div class="doubleDiv">
+                <div></div>
+                <div class="text">
+                    <p><span>
+                            <i>
+                                我爸爸是一名肾透析患者，
+                                目前居住在上海市黄浦区中华路。
+                                他需要每周固定三天去医院做透析维持生命，
+                                此前在开了外出就医证明，
+                                自行去医院。
+                                现因住所有阳性患者 （共五人，其中包括一位7岁儿童、 两位七旬老人）同吃同住，
+                                爸爸成为了密接， 目前核酸显示阴性，
+                                且无法避免不与阳性患者接触，
+                                曾给方舱医院打过，尚未派人来接走。
+                                我们深知密接者不应隐瞒实情去医院， 所以打了很多，一概忙线。街道都不管此事。
+                                可肾透析患者是等不起的…
+                            </i>
+                        </span></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="text">
+            <p class="text-center"><span class="text-highlighting2 text-bold ph3">
+                    2022年4月18日小王第一次发出求助<br>
+                    她的父亲因为感染新冠病毒而无法入院做透析
+                </span></p><br><br>
+
+            <p><span class="bg-light text-bold">“本来是为了方便就医，没想到直接被困在家里了”</span></p><br>
+
+            <p><span>
+                小王的父亲是一名尿毒症患者，需要每周固定三天去浦西的医院做透析，疫情之前居住在浦东，三月末上海疫情开始严重，浦东进入全面封控。为了方便就诊做透析，小王父亲搬到了浦西的家里居住，
+                <span class="bg-light">但是没想却感染了新冠，如此一来，小王父亲的血透之路变得更加艰难。</span>
+                
+            </span></p><br>
+        </div>
+
+        <div class="text divBorder">
+            <p>
+                <h3>小知识</h3>
+            <p>
+                <span>
+                    慢性肾功能衰竭在临床上分为五期，<span class="bg-light text-bold">慢性肾脏病五期才是尿毒症</span>。<br>
+                    在中国，<span class="bg-light text-bold">慢性肾脏病的患病率高达10.8%，患者人数超过1亿</span>，需要接受肾脏替代治疗的<span
+                        >终末期肾病患者有150多万</span>，并以<span>每年新增12万～15万</span>的趋势持续上升。
+                    根据世界顶级医学期刊《柳叶刀》公布了全球慢性肾脏病流行病学报告：截止到2017年，全球慢性肾脏病患者人数达6.975亿，其中<span
+                        class="bg-light text-bold">中国患病人数达1.323亿</span>——大致和糖尿病人数持平。
+                </span><br>
+
+                <div class="text-center" style="position: relative;z-index:3"><i style="z-index:3">数据来源:国家卫健委和《柳叶刀》</i></div>
+                <br>
+                <br>
+                
+            </p>
+            </p>
+            
+
+            <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/divBorder.svg" alt="" class="img-responsive center-block">
+        </div>
+        <br>
+
+        <div class="text">
+            <!-- <p><span class="text-bold">血液透析，这是一种慢性肾衰竭、尿毒症等患者需要进行长期坚持以维系生命的治疗手段，若不做血透，患者会出现恶心呕吐、水肿气喘等症状，引发众多并发症，最终危及生命。</span></p><br> -->
+            <br>
+            <!-- <p><span>
+                    在总数<span class="text-highlighting text-bold">4255条求助信息</span>当中，有<span
+                        class="text-highlighting text-bold">485条需求原因</span>是基础病，其中<span
+                        class="text-highlighting text-bold">80%需要长期服用的药品</span>，而<span
+                        class="text-highlighting text-bold">20%需要进行血液透析等长期治疗手段</span>。
+                </span></p><br>
+
+            <p><span>
+                    <span class="text-highlighting text-bold">血液透析</span>，这是一种慢性肾衰竭、尿毒症等患者需要进行长期坚持以<span
+                        class="text-highlighting text-bold">'维系生命的治疗手段</span>，若不做血透，患者会出现恶心呕吐、水肿气喘等症状，引发众多并发症，最终危及生命。
+                </span></p><br> -->
+        </div>
+
+        <!-- <div class="text divBorder">
+            <p>
+                <h3>小知识</h3>
+                <p><span>
+                    血液透析简称血透，是一种肾脏代替治疗方式。简单来说，就是用机器代替肾脏过滤血液，去除新陈代谢物和过多水分，血透过程中，透析机器将患者血液抽出，像筛子一样把无用的东西筛出来，把有用的东西通过机器回输回到体内，如此反复循环对血液进行“清洗”。
+                </span></p>
+            </p>
+
+            <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/divBorder.svg" alt="" class="img-responsive center-block">
+        </div>
+        <br> -->
+
+
+        <div class="ParallaxFloating">
+            <div id="stackBarWithLine2"></div>
+            <!-- <div id="plot" class="container"></div> -->
+            <br>
+            <br>
+
+            <div class="floatItem text">
+                <p><span>
+                        中国成人慢性肾脏病发病率为10.9%，
+                        其中需要透析的患者<span class="bg-light">约有1%左右</span>。
+                        根据上海人口粗略估算，
+                        <span class="bg-light">全市透析人群约在两万左右</span>。
+                        在求助网站中，<span class="bg-light">像小王父亲这样无法及时入院的血透患者不在少数</span>。
+                    </span></p>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="ParallaxFloating">
+            <div id="waffle"></div>
+            <br>
+            <br>
+
+            <div class="floatItem text">
+                <p><span>
+                    在此次上海封控期间，包括尿毒症在内的基础病的就医需求尤为紧迫，在总数4368条求助信息当中，
+                    <span class="bg-light text-bold">
+                        有719条需求是由于基础病，其中89%是需要长期服用的药品，而11%则需要进行血液透析、化疗放疗等长期治疗手段。
+                    </span>
+                    
+                </span></p>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="text">
+            <p><span class="bg-light">
+                    <i>“（父亲）死了都没有人知道，因为那栋楼里只有他一个人。”</i>
+                </span></p>
+            <br>
+
+            <p><span>
+                小王父亲在浦西的房子是一栋三层楼共用卫生间和厨房的石库门，这是小王家的祖业，已建成近九十年。包括小王父亲在内，<span class="bg-light text-bold">狭窄的空间内共住了13位居民，其中有12位被确诊为阳性，</span>
+                
+                而除了小王父亲，其余的居民都被转运至方舱医院。
+
+            </span></p><br>
+        </div>
+        <br>
+
+
+        <div class="imgContainer text">
+            <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/door.jpg" alt="" class="shadow center-block img-responsive">
+            <br>
+            <p class="text-center"><span class="text-explain"><i>石库门，一种颇具代表性的上海民居，设计封闭，门内自成一统(图片来源: 百度)</i></span></p>
+        </div>
+        <br>
+
+        <div class="text">
+            <p><span>
+                    小王开始联系自己的熟人帮忙排队，但是由于封控之后就诊需求激增，医院床位都很紧张，疾控中心给出的答复是耐心排队。<span class="bg-light">在排队后的五天</span>，她一直未收到去做血透的联系电话，<span
+                        class="bg-light">此时的父亲已经错过了两次本该做的血透</span>。
+                </span></p>
+            <br>
+
+            <p><span>
+                    他从18日确诊新冠之后在家独居，连续5天没有进行血液透析的他<span
+                    class="bg-light">不敢吃东西、喝水，甚至不敢使劲，只能躺在床上等待救助</span>，整个人的状态急转直下。</span>
+            </p><br>
+
+            <p><span class="bg-light">
+                    从整体数据上来看，基础病让许多阳性感染者更加危险。
+                </span></p><br>
+
+            <p><span>
+                    根据上海市卫生健康委员会每日发布的确诊及死亡病例报告，分析4月17日至5月15日的数据，可以发现死亡病例大部分患有基础性疾病，<span
+                    class="bg-light">575例死亡中有574例有基础病史，仅有一例33岁的心源性猝死，</span><span class="bg-light">死亡比例高达99%。</span></span></p>
+        </div>
+
+        <div class="flourish-embed flourish-survey container" data-src="visualisation/10375287">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+        <br>
+
+        <div class="text">
+            <p><span class="bg-light"><i>“我当时已经做好了最坏的打算。”</i></span></p>
+            <br>
+
+            <p><span>
+                    小王的焦虑感一直在持续，在发布求助信息的同时，她也看到了其他备受煎熬却无能为力的基础病患者。
+                    <span class="bg-light"><i>“我看着他们，我就觉得很艰难，很绝望”</i></span>
+                    ，小王很担心父亲的状况会因为得不到及时救助而越来越差。
+                </span></p>
+            <br>
+
+            <p><span>
+                    她在微博发布了求助信息，所幸这条微博在发布几天之后有了热度， 超过5000人转发，随之而来的是许多志愿者的来电： “一个小时接了三十多通（电话）。”<span
+                        class="">小王认为求助能得到解决是因为有志愿者的帮助</span>，他们不断打电话去疾控中心询问情况，大大推进了求助解决的效率。
+                </span></p>
+        </div>
+        <br>
+
+        <div id="weiboScreenshot">
+            <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/weibo1.jpg" alt="" class="img-responsive shadow">
+            <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/weibo2.jpg" alt="" class="img-responsive shadow">
+        </div>
+
+        <div class="text-explain text-center container">
+            <i style="margin:auto" class="text-explain">小王的两次微博求助</i>
+        </div>
+        <br>
+
+        <div class="text">
+            <p><span>
+                    4月23日下午，小王父亲终于入院得到治疗。目前小王父亲已经恢复了，除了日常去医院进行血液透析，其他的状况都恢复得跟疫情之前差不多。
+                </span></p>
+            <br>
+
+            <p><span>
+                    对小王来说，这次网上求助经历了许多意料之外的情况，在微博发出之后，她<span class="bg-light">
+                        “大概两分钟接一个电话，很多都是志愿者，那个时候还是觉得很温暖的，人间值得。”
+                    </span>
+                </span></p><br>
+
+            <!-- <img src="./img/stickyNote.png" alt="" class="img-responsive"> -->
+        </div>
+        <!-- <iframe height=498 width=510 src='https://player.youku.com/embed/XNTg5MDIyMTYzMg==' frameborder=0></iframe> -->
+        <!-- <iframe height=498 width=510 src='https://player.youku.com/embed/XNTg5MDIyMTYzMg==' frameborder=0 'allowfullscreen'></iframe> -->
+
+        <div class="text" id="stickyNote">
+            <video width="100%" height="auto" muted>
+                <!-- <source src="./img/便利贴.mp4" type="video/mp4" srcset="./img/stickyNote bg.png"> -->
+                <source src="https://cdn.jsdelivr.net/gh/LYA0728/dataJournalism/website/mediaResource/stickyNote.mp4" type="video/mp4">
+                <source src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/stickyNote.mp4" type="video/mp4">
+                
+                <!-- <source src="https://player.youku.com/embed/XNTg5MDIyMTYzMg==" type="video/mp4"> -->
+              </video>
+        </div>
+    </section>
+
+    <section>
+        <div class="centerContainer container">
+            <div class="titleContainer">
+                <img class="img-responsive" alt="" src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/titleIcon.svg">
+                <p>精神疾病患者：缺药危机 </p>
+            </div>
+        </div>
+        
+        <div class="ParallaxFloating">
+            <div id="meetingplot"></div>
+            <br>
+            <br>
+
+            <div class="floatItem text">
+                <p><span>
+                        在1583条药物求助中，<span class="bg-light text-bold">精神疾病患者和家属的求助有294条，占比18.6%。</span>
+                    </span></p><br>
+            </div>
+        </div>
+
+         <!-- <div class="container flourish-embed flourish-chart" data-src="visualisation/10389114" class="stickPlot">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div> -->
+        
+        <div class="ParallaxFloating">
+            <div id="AcePlot"></div>
+            <!-- <div id="AcePlot"></div> -->
+           
+
+            <div class="floatItem text">
+                <p><span>在精神类疾病中，<span
+                            class="bg-light">有80%的求助者面临着焦虑与抑郁问题</span>，17%的求助者面临着精神分裂症（或双相情感障碍）问题，剩下的3%则是面临因疫情封控而突发的心理问题。
+                    </span></p><br>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="text">
+            <p><span>
+                    我们通过分析这294条求救信息，窥见了封控之下许多精神疾病患者的状态与处境。<span class="bg-light">“睡不着”、“无法控制情绪”、“哭”、“扛不住了”</span>……这些词汇构成了封控期间许多精神疾病患者的情绪世界。
+                </span></p><br>
+
+            <p><span>
+                    4月15日凌晨四点，小迟从梦中惊醒。她又“犯病”了，心脏异常闷痛、呼吸急促，还伴随着四肢麻痹，不住地颤抖，这些都是抑郁症与焦虑症“躯体化”的表现。
+                </span></p><br>
+        </div>
+
+
+        <div class="container text-explain text-center">
+            <i>躯体化症状指抑郁症患者除存在情绪低落，兴趣缺乏，意志活动减退外，还伴有躯体症状，一般表现身体多处不适，如失眠，胸闷，心悸，胃肠道症状，头疼等
+            </i>
+        </div><br>
+
+        <div class="text">
+            <p><span>
+                    小迟是一位上海的重度抑郁与焦虑症患者，目前在大学宿舍隔离，这是她完全断药的第16天。实际上，从3月25日起，她“基本上就已经没有药吃了，就一片掰成两片吃”。
+                </span></p><br>
+
+            <p><span>
+                    在封控管理之下，上海许多精神疾病患者面临着缺药危机，与常见的基础性疾病不同，断药对精神类疾病患者而言可能不直接危及生命，但是对于需要长期服药治疗的他们来说,
+                </span></p><br>
+
+            <p><span class="bg-light">
+                    断药，意味着病情将卷土重来，还意味着要忍受强烈的戒断反应。
+                </span></p><br>
+
+            <p><span>
+                    今年是小迟坚持服用氯硝西泮片治疗<span class="bg-light">“躯体化”</span>症状的第二年。在完全断药的半个月里，她称自己是“硬抗”过来的，几乎夜不能寐。
+                </span></p><br>
+
+            <p><span>
+                    “我没有跟任何人讲，因为我不想给其他人造成麻烦，毕竟那个时候上海基本上处于‘一锅粥’的状态。”直到4月25日凌晨，这次复发的躯体化症状异常凶猛，让小迟感觉“自己要倒下了”。
+                </span></p><br>
+
+            <p><span>
+                    她想到了之前有人在朋友圈转发的在线抗疫互助网站，于是她进入网站中写下这一条求助：
+                </span></p><br>
+        </div>
+
+        <div class="container doubleDivContainer">
+            <div><img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/phoneIcon.svg" alt="" class="img-responsive center-block"></div>
+            <div class="doubleDiv">
+                <div></div>
+                <div class="text" style="color:#000;padding: 35px 15px;">
+                    <p><span>
+                            <i style="color:#000;padding: 305px 0;">
+                                “我有重度焦虑症，人在上海大学，已经断了10多天药了，每天生不如死浑身抽搐。需要氯硝西泮、思诺思、阿普唑仑等安眠药。”
+                            </i>
+                        </span></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="text">
+            <p><span>
+                    “然后大概两个小时之内，就有一个医生联系我，说他能帮我开到药。”在一周内，小迟陆续收到了50条愿意提供帮助的陌生电话和短信，这些援助分别来自医生、病友、病患家属、药房等。
+                </span></p><br>
+
+            <p><span>
+                    最终在一位朋友的帮助下，一盒氯硝西泮片经出租车司机转运，被送到了小迟手上。
+                </span></p><br>
+        </div>
+
+        <div id="simpleCircularBar"></div>
+        
+        <br>
+        <br>
+        <br>
+
+        <div class="text">
+            <p><span>
+                封控下的精神疾病患者在抗疫互助网站上求药自救， 草酸艾司西肽普兰片（百适可）、富马酸喹硫平（思瑞康）、氯硝西泮、右佐匹克隆片……这些是互助网站中出现频率最高的精神类药物，<span class="bg-light"> 也是最常见的抗抑郁、焦虑、强迫、失眠的药物，但它们都为处方药，意味着在疫情封控期间更加难以到医院与药房购买</span>，往往只能从有存药者手中获得。</span></p><br>
+        </div>
+
+        <div class="ParallaxFloating">
+            <div class="flourish-embed flourish-chart container" data-src="visualisation/10437003">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+            <br>
+
+            <div class="floatItem text">
+                <p><span>
+                        上海普通民众的心理危机同样不容乐观，据百度指数，疫情爆发以来，上海用户搜索<span class="bg-light text-bold">心理咨询的热度同比上升253%。
+                        </span>
+                    </span></p><br>
+            </div>
+        </div>
+
+        <div class="ParallaxFloating">
+            <div class="flourish-embed flourish-chart container" data-src="visualisation/10432788">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div><br>
+
+            <div class="floatItem text">
+                <p><span>
+                        根据照路明•上海居民疫情心理状况问卷统计，4月前两周的数据显示：
+                        <span class="bg-light text-bold">
+                            近40%的上海居民已呈现抑郁风险</span>。
+                    </span>
+                    </span></p><br>
+            </div>
+        </div>
+
+        <div class="text">
+            <p><span>
+                <span class="bg-light">
+                    “看不到尽头。”</span>不少受访者都这样回忆起封控时期，长期的隔离状态、感染形势不断严峻、物资短缺……种种因素让封控下的每一个个体都难以逃脱不确定性与危机感的包围。
+            </span></p><br>
+
+            <p><span>对小迟来说，封控期间对她造成情绪冲击的因素<span class="bg-light">还有舆论。</span></span></p><br>
+
+            <p><span>
+                    “网上的言论非常的不好，感觉全国人民对上海的敌意和抱怨声非常大，都在说上海人民多么冷漠、说什么上海人精致利己主义之类的，但是我完全没有感受到（这点）。”
+                </span></p>
+            <br>
+
+            <p><span>
+                    小迟的求助信息一经发出，<span
+                        class="bg-light">校方闻讯向她提供了力所能及的帮助，老师、同学和网友都向她伸出了援助之手</span>，她说：
+                </span></p><br>
+
+            <p><span>“他们都挺热心的，而且不求回报。”</span></p><br>
+
+            <p><span>
+                    5月18日起，上海各高校逐级落实大学生离校返乡政策，小迟申请前往川渝的亲戚家，开启了一段旅行。<span
+                        class="bg-light">对她来说，拿到药与解除封控并非故事的结束</span>，为了稳定病情，她还需要做出其他努力。
+                    除此之外，她希望“疫情可以早点结束，想早点回到上海，准备二战考研。”
+                </span></p><br>
+                <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/alone.svg" alt="" class="img-responsive center-block">
+        </div>
+    </section>
+
+    <section>
+        <div class="centerContainer container">
+            <div class="titleContainer">
+                <img class="img-responsive" alt="" src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/titleIcon.svg">
+                <p>解决：迭代中的数字工具，如何推动救助？</p>
+            </div>
+        </div>
+        
+
+        <div class="text">
+            <p><span>求助网站中有着这样一条<span class="text-highlighting2">特殊来信：</span></span></p><br>
+        </div>
+
+        <div class="container doubleDivContainer">
+            <div><img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/phoneIcon.svg" alt="" class="img-responsive center-block"></div>
+            <div class="doubleDiv">
+                <div></div>
+                <div class="text">
+                    <p><span>
+                            <i>
+                                “抗疫志愿者，每天都在抗疫工作，目前浦东，希望可以帮到你，微信13*66;联系人：李先生”
+                            </i>
+                        </span></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="text">
+            <p><span>信息的发出者是车车，<span class="bg-light">他是一个热衷公益的小伙</span>。</span></p><br>
+
+            <p><span>
+                    在此轮疫情爆发之前，车车和他的小伙伴们曾组织过一个名为“上海虹色梦”的公益组织，专注于女性健康。此次疫情爆发后，原定前往西部的公益之旅无奈只能取消。
+                </span></p><br>
+
+            <p><span>
+                    在居家隔离的过程中，<span
+                        class="bg-light">车车看到许多老人的困境</span>：他们在微信群谨小慎微地求助如何使用智能手机购置物资、通过语音用不太标准的普通话向居委会寻求帮助……车车与他的伙伴们决定改变计划，<span class="bg-light">投身于老人帮扶之中</span>，于是一个四到五人的小型志愿者组织建立起来了。
+                </span></p><br>
+
+            <p><span>车车在组织中<span>担任“联络员”的工作，</span>主要负责发布、收集和整合求助信息。首先，他将提供帮助的信息发布在朋友圈，随即，他的信息得到了大量的转发。
+                </span></p><br>
+
+            <p><span>
+                <span class="bg-light"><i>“一直有电话，短消息也很多，因为太多了，后来我只能关机了”</i>
+                </span>，这是车车最忙碌时的状态。
+                </span></p><br>
+
+            <p><span>
+                    封控之下，<span
+                        class="bg-light">需要帮助的人散落在城市的各个角落</span>，车车与同伴只能选择先从身边熟悉的社区开始帮助。主要对接的是生活类的物品，比如牛奶、鸡蛋、面包之类。他们先与小区的居委会对接，再调查小区的独居老人人数，然后按照人头发放定量的物资。
+                </span></p><br>
+
+            <p><span>
+                    在整个疫情期间，他们一共服务了23个上海小区的<span class="text-highlighting2">2123位独居老人</span>、17家养老院等机构的<span class="text-highlighting2">2236位老人</span>、700位浦东医疗急救中心的医护人员、<span
+                        class="text-highlighting2">240位复旦儿科方舱的婴幼儿</span>、359位防疫志愿者和68位脊椎损伤伤友。
+                </span></p><br>
+
+            <p><span>
+                    他们的服务对象包括从<span>婴幼儿到101岁高龄的独居老人</span>，联合多家公益机构援助的<span>物资总额超过43万</span>，也收到很多社区的感谢信。
+                </span></p><br>
+
+            <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/temporaryImg.svg" alt="" class="img-responsive center-block"><br>
+
+            <p><span>
+                    上海封控结束，<span class="bg-light text-bold">车车的公益之旅仍在继续</span>，他将专注于筹划下一次前往西部的旅程，去帮助那里需要帮助的女性。</span></p>
+            <br>
+
+            <p><span>
+                    同样被困在上海，<span class="bg-light text-bold">产品经理哪吒也在求助网站上发布了一条</span><span
+                        class="bg-light text-bold">提供帮助的留言</span>：
+                </span></p><br>
+        </div>
+
+        <div class="container doubleDivContainer">
+            <div><img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/phoneIcon.svg" alt="" class="img-responsive center-block"></div>
+            <div class="doubleDiv">
+                <div></div>
+                <div class="text">
+                    <p><span>
+                            <i>
+                                “这里有一盒阿普唑仑，
+                                24片装，自己用过两片，
+                                还剩22片，
+                                有需要的请提供医疗证断证明。v:185****7864;联系人：哪吒;联系电话：185****7864
+                            </i>
+                        </span></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="text">
+            <p><span>
+                    网友哪吒提供的精神类药物是上海封控期间最为紧俏的物资之一，她从互助网站上看到许多心理疾病患者的危机，<span class="bg-light text-bold">于是打算将自己闲置的失眠治疗药物送给他人
+                    </span>。
+                </span></p><br>
+
+            <p><span>
+                    她通过网站联系到<span>两位心理疾病患者</span>，最终通过同城闪送的方式将自己的药物送到了需求者身边。
+                </span></p><br>
+
+            <p><span>
+                    对于本就是互联网从业者哪吒而言，互助网站存在着许多bug（故障） ，<span
+                        class="">网站的设计存在着诸多不完善的地方，这十分影响用户体验，也多次快要让她要去帮助别人的欲望丧失掉</span>。即便如此，这种“民间自发的、不完美的、不那么合规的网站”，<span
+                        class="bg-light">仍然让她看到了困难时期一种朴实而粗糙的人性力量</span>。
+                </span></p><br>
+                
+        </div>
+        <br>
+
+        <div class="ParallaxFloating">
+            <div id="polarPie"></div><br>
+
+            <div class="floatItem text">
+                <p><span>
+                    <span class="text-highlighting text-bold">
+                        这些特殊来信共有137条</span>，零星散落在各种求助之中，同样被困于疫情中的他们向民众们提供物资、药品、交通工具、心理咨询或是情感陪伴，<span
+                        class="text-bold text-highlighting">成为疫情中的“星星之火”
+                    </span>。
+                </span></p>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        </div>
+
+        <div class="ParallaxFloating">
+            <div class="flourish-embed flourish-chart container" data-src="visualisation/10431979">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+            <br>
+
+            <div class="floatItem text">
+                <p><span>
+                        民众中的志愿力量成为<span
+                            class="text-highlighting text-bold">疫情中不可小觑的存在</span>，随着上海疫情的变化，各地的抗疫志愿者项目正在迅速开展，
+                        从2月7日到6月22日，
+                        上海的抗疫志愿者项目<span class="text-highlighting2 text-bold">共增加了7616个</span>，
+                        在3月22日，
+                        上海仅一天就增加了高达272个志愿者项目。
+                    </span></p>
+            </div>
+        </div>
+
+        <div class="ParallaxFloating">
+            <div id="horizontalLollipop"></div>
+            <br>
+            <br>
+
+            <div class="floatItem text">
+                <p><span>
+                        从数据上看，浦东新区的志愿者力量显得更为庞大，<span
+                            class="text-highlighting text-bold">截至6月22日，浦东新区的志愿服务总时长排行第一，达到306781小时。</span>
+                    </span></p><br>
+            </div>
+        </div>
+        <br>
+
+        <div class="ParallaxFloating">
+            <div id="arcPie"></div>
+            <br>
+            <br>
+
+            <div class="floatItem text">
+                <p><span>
+                        这些志愿者们大多数投身于核酸检测(55%)、防疫宣传(12%)与秩序引导(8%)等工作，除了与官方力量的配合，还有大批的志愿者，像车车团队与哪吒那样，关注着社交网站上的各种紧急求助，成为解决他人燃眉之急的救援者。
+                    </span></p>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div id="circularStackBar"></div>
+        <br>
+        <br>
+
+
+        <div class="text">
+            <p><span>
+                    从“稻侯er”互助网站上可见，上海民众的求助得到不同程度解决，<span class="bg-light">其中解决率最高的需求为食品达70%，这是在封控期间相更具有普适性且获取限制较少的物资。
+                    </span><br>
+                    <br>
+                    
+                    其次是心理疾病类需求和医院治疗需求，<span class="bg-light">解决率分别为67%与58.5%
+                    </span>，这类需求的紧急程度往往更高，病患们若没有得到及时的救助，其身体甚至生命都会遭到严重的损害。
+                    合并“稻侯er”与“FT同悦平台”两个在线互助网站的数据，<span class="bg-light">共有11316条”已解决“的求助，总体解决效率达到了88.9%。</span>可以说，<span>互助网站让许多需要帮助的人们走出了困境
+                    </span>。
+                </span></p>
+        </div>
+
+    </section>
+
+    <!-- 过渡页3 -->
+    <div class="parallax container-fluid" id="parallaxPage3">
+        <div class="text-center text-capitalize">
+            思考：新语境下的互助<br>
+            Mutual aid in a new context
+        </div>
+    </div>
+
+    <section>
+        <div class="centerContainer container">
+            <div class="titleContainer">
+                <img class="img-responsive" alt="" src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/titleIcon.svg">
+                <p>互助文档的“身影”</p>
+            </div>
+        </div>
+        
+
+        <div class="text">
+            <p>
+                <span>由网民在线发布求助信息，志愿者或救援队进行对接帮助的互助形式已有先例。</span>
+            </p><br>
+
+            <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/timeLine2.svg" alt="" class="img-responsive center-block"><br>
+
+            <p><span>
+                    在<span class="bg-light text-bold">2021年河南暴雨期间</span>，一份名为<span class="">“待救援人员信息”的共享腾讯文档</span>在社交媒体上迅速传播，它的制作者是一位叫“Manto”的网友，求救者可以在上面实时留言自己的状况请求援助。在文档发布后的24小时内，<span class="bg-light text-bold">文档“自发”更新了270多版，共有250多万次访问量
+                    </span>。
+                </span></p><br>
+
+            <p><span>之后，“在线救助文档”不仅在自然灾难面前与时间赛跑，也在疫情期间成为无声的救助力量。<span class="bg-light">“泉州抗疫救助文档”、“山西抗疫救助文档”纷纷涌现</span>。作为对政府抗疫力量的民间补充,越来越多人奔走驰援，自发成为在线文档的创建者、维护者。
+                </span></p><br>
+
+            <p><span>
+                    “我们来抗疫”两个网站，正是在在线文档的启发下创立的，每个人可以直接访问网站，而无需通过文档的转发链，<span class="bg-light text-bold">让有需求的人和想提供帮助的人相遇</span>。
+                </span></p><br>
+
+            <p><span>不同于传统的“水滴筹”等以转发式筹款的在线互助平台，以“我们来抗疫”网站和在线文档为代表的的社会网络救助具有<span class="bg-light text-bold">自组织性强、反应快、协作高效、对接精准</span>的优点，求助者只需在网站或文档留下几项基本的个人信息，便会有志愿者团队或帮助者跟进对接解决求助。
+                </span></p><br>
+            <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/table.svg" alt="" class="img-responsive center-block"><br>
+    </section>
+
+    <section>
+        <div class="centerContainer container">
+            <div class="titleContainer">
+                <img class="img-responsive" alt="" src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/titleIcon.svg">
+                <p>存在哪些问题</p>
+            </div>
+        </div>
+        
+
+        <div class="text">
+            <p><span>
+                    但社交网络在线互助平台在运行中也带来了一系列的问题，如<span class="bg-light text-bold">平台化的信息冗余</span>，用户直接填写使得信息可能被篡改，<span>真假难辨</span>；为提高互助效率而暴露出的个人信息<span class="bg-light text-bold">也存在隐私泄露的风险</span>：例如一位上海的女生在平台上发布需要十朵玫瑰花的需求而遭到了连续不断的短信网暴。
+                </span></p><br>
+
+            <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/existedProblem.svg" alt="" class="img-responsive center-block"><br>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="centerContainer container">
+            <div class="titleContainer">
+                <img class="img-responsive" alt="" src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/titleIcon.svg">
+                <p>科技向善</p>
+            </div>
+        </div>
+        
+
+        <div class="text">
+            <p><span>
+                在线网站、共享文档等数字工具的应用，带给我们这样的思考：<span class="bg-light text-bold">在数字技术赋能下，我们的应急救助救援是否可以更加精准有效，凸显数字的温度？</span>
+            </span></p><br>
+
+            <p><span>
+                像“我们来抗疫”这样的公益性质的互助网站是仅应对特定需要时临时组建，<span class="bg-light">还是可以常存永续，专门管理，</span>作为日常求助的一种补充？
+            </span></p><br>
+
+            <p><span>学者Silvia和Mcguire认为，“突发状况如灾害或疫情的应对需要各级政府的努力，如果灾备管理良好，每一级政府都可能在紧急情况中发挥关键作用。但如果灾难响应和灾后恢复的背景不断变化，例如环境不断恶化或人员持续伤亡，仅仅靠政府的能力和资源通常不足以及时处理重大灾害，这时候，<span class="bg-light text-bold">官方与民间互助网络的合作将变得至关重要</span>。”
+            </span></p><br>
+
+            <p><span>
+                以网站形式收集与对接需求，在使用中的确可以保证高效与及时，但是民间人士临时建立网站的<span class="bg-light text-bold">审批与监管过程往往会存在着阻碍。</span>稻侯er的创始人刘思谈就提到网站注册需要有工信部的备案才能运营，审批过程漫长，如果不是之前公司曾注册过一个网站，稻侯er根本不可能这么快上线。
+            </span></p><br>
+
+            <!-- <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/websiteBuild Process.svg" alt="" class="img-responsive center-block"><br> -->
+
+            <p><span>针对在线互助平台是应该<span class="bg-light">“即用即开”还是“长期存续”</span>的问题，网友 @和菜头 提出建议：</span></p><br><br>
+        </div>
+
+        <div class="container doubleDivContainer">
+            <div><img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/phoneIcon.svg" alt="" class="img-responsive center-block"></div>
+            <div class="doubleDiv">
+                <div></div>
+                <div class="text">
+                    <p><span>
+                            <i>
+                                “每当灾害来临时，汇总、通报求助通道、寻人和保平安、救援点信息、救援物资信息、临时庇护所和医院信息、水电通讯保障情况应作为特定功能保留下来，在灾害到来的时候临时启用，在灾害过去后进行优化。”
+                            </i>
+                        </span></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="text">
+            <p><span>对于救助形态的转变，中国政法大学传播法研究中心副主任朱巍说，近年来的民间互助互救形态发生了很大变化，不仅有很多专业、科学的救援和志愿者团队出现，而且以往互助互救常常顾虑的<span class="bg-light text-bold">担责问题也有了法律的保障
+                </span>:
+            </span></p><br>
+
+            <p><span>
+                <span class="bg-light text-bold">
+                    据《民法典》中第一百八十四条</span>，因自愿实施紧急救助行为造成受助人损害的情况，救助人不用承担民事责任，
+                <span>
+                    消除了救助人的后顾之忧。
+                </span>
+            </span></p><br>
+
+            <p><span>
+                在利用数字网络工具进行求助时，网络设备的使用是必要条件。但老人、小孩等群体因为不会使用网络终端，常常要靠他人进行发声进行代求助。
+            </span></p><br>
+
+            <p><span>
+                腾讯可持续社会价值事业部应急平台项目负责人滕超提出:<span class="bg-light">未来可通过可穿戴设备等硬件设备进行在线求助</span>，当遇到紧急状况需要求助时,可通过可穿戴设备传输信息到相应的救助方，从而避免因无法使用移动设备而错过求助机会。
+            </span></p>
+        </div>
+
+
+
+        <div class="ParallaxFloating">
+            <div id="forceCircle"></div>
+           <!--  <div class="flourish-embed container" data-src="visualisation/10392592">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div> -->
+            <br>
+            <br>
+
+            <div class="floatItem text">
+                <p><span>
+                    在稻侯er互助网站的数据中，为自己求助的占比最大，可见在疫情期间，多数人正是通过网站来“自救”
+                </span></p>
+            </div>
+        </div> 
+    </section>
+
+    <section>
+        <div class="centerContainer container">
+            <div class="titleContainer">
+                <img class="img-responsive" alt="" src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/titleIcon.svg">
+                <p>后记: 连接“孤岛”与“孤岛”</p><br>
+            </div>
+        </div>
+        
+
+        <div class="text">
+            <p><span>在特殊时期，以政府为主导的官方救助调员力量无法面面俱到，<span class="bg-light">每一个人既可能是受难者，也可以是帮助者</span>。我们针对社会网络在线互助平台所起作用的讨论不会停止，也希望能继续有人探寻它的未来。社交网络救援的成规范化体系任重而道远，公共之善的落地生根道阻且长。
+            </span></p>
+
+            <p><span>
+                尼古拉斯在《大连接》一书中提到：“因人与人之间的相互连接关系而引发的现象，在作为个体的人中间不曾出现过，也无法还原为个人的希望和行为。文化本身就是这样一种现象。”
+            </span></p><br>
+
+            <p class="text-center" style="text-align:center">
+                <span class="bg-light text-center">
+                    一旦失去了连接，我们将一无所有。
+                </span>
+            </p><br>
+
+            <p><span>
+                <span class="text-highlighting">疫情封控当前，每个人像是一座孤岛</span>，无法及时就诊的老人、困在宿舍的大学生、在天桥下听雨的流浪者、出不了门的打工族……许多人的生活都被疫情截断，被困在上海两个月的大学生嘶嘶告诉我们：
+            </span></p><br>
+
+            <p class="text-center" style="text-align:center">
+                <span class="bg-light">
+                    “那时候想去帮助别人，像是一种本能。”
+                </span>
+            </p><br>
+
+            <p><span>
+                线上互助平台<span class="">成为“孤岛”与“孤岛”之间的一座桥梁，将被隔离中的需求方与提供帮助的另一方连接在一起，通过简洁的页面迅速展示需求方的困境与问题精准连接相关的个人或组织，</span><span class="bg-light">减少了繁杂的程序流程和其他因素影响。</span>
+            </span></p><br>
+
+            <p><span>
+                在这里人们寻找着自我与他人的互动，寻找自身与社会的连接，在线上重新编织起社会网络，人们生活在一个互联的社会中，这意味着：
+            </span></p><br>
+
+            <p style="text-align:center"><span class="bg-light">
+                我们所有人，自觉或不自觉地，彼此互相依赖。
+            </span></p><br>
+        </div>
+    </section>
+
+    <section>
+        <div id="ending">
+            <div class="text">
+                <p><span class="bg-light">“丧钟为谁而鸣？没有人是一座孤岛可以自全。”</span></p><br>
+
+                <p><span>于是我们记录线上互助平台上发生的一切</span></p><br>
+
+                <p><span>记录在2500万人静止的非常时刻</span></p><br>
+
+                <p><span>是互伸出的援手</span></p><br>
+
+                <p><span>是人与人的互动</span></p><br>
+
+                <p><span>平台与城市的连接</span></p><br>
+
+                <p><span>是坚持，奔赴，勇气和信心</span></p><br>
+
+                <p><span>让我们一起走过了这个寂静的春天</span></p><br>
+
+                <p><span class="text-bold">指导老师</span></p><br>
+
+                <p><span>黄文森</span></p><br>
+
+                <p><span class="text-bold">制作</span></p><br>
+
+                <p><span>黄裔集 刘益安 冯思思 李春怡 邱文琪</span></p>
+
+            </div>
+            <div id="endingAn">
+                <video width="100%" height="auto" muted>
+                    <!-- <source src="./img/便利贴.mp4" type="video/mp4" srcset="./img/stickyNote bg.png"> -->
+                    <!-- $('div#endingAn video').trigger('play');  -->
+                    <!-- <source src="https://raw.staticdn.net/LYA0728/dataJournalism/master/website/mediaSource/stickyNote.mp4" type="video/mp4"> -->
+                    <source src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/endingAn.mp4" type="video/mp4">
+                    <source src="https://cdn.jsdelivr.net/gh/LYA0728/dataJournalism/website/mediaResource/endingAn.mp4" type="video/mp4">
+                    <!-- <source src="endingAn.mp4" type="video/mp4"> -->
+                  </video>
+
+                  <p class="text-center"><i class="text-explain ">点击手指,一起为上海点亮希望之光</i></p>
+                  
+            </div>
+        </div>
+    </section>
+    <div class="text" id="backToTop">
+        <img src="https://raw.githubusercontents.com/LYA0728/dataJournalism/main/website/mediaResource/backToTop.svg" alt="" class="img-responsive center-block">
+        <p class="text-center"><span>回到顶部</span></p>
+    </div>
+    <hr>
+    <br>
+
+    <section id="footer">
+        <div class="citations">
+            <p class="text-center">
+                (感谢热心的小王、小迟、车车和哪吒接受我们的采访, 文中采访对象皆采用匿名形式)
+            </p>
+            
+            <ol>
+                <li>《每日人物》.85后创立上海抗疫互助网，接收4000多条信息，希望更多人看到，2022.4.16</li>
+                <li>央广网.对话“我们来帮你·上海抗疫互助”公益平台发起人，讲述平台运营背后的互助故事2022.4.16</li>
+                <li>央视新闻：“如果不透析，存活率为零”疫情下 武汉七千多名血透患者的“生命线”这样被守护，2020.3.22</li>
+                <li>
+                    照路明：四成人呈现抑郁风险，上海居民需要心理救援，2022.4.16
+                </li>
+                <li>
+                    Chris Silvia, Michael McGuire, Leading public sector networks: An empirical examination of integrative leadership behaviors, The Leadership Quarterly, Volume 21, Issue 2,2010,Pages 264-277
+                </li>
+                <li>
+                    公益时报:“救命文档”刷屏朋友圈背后，数字共建可在灾害黄金时间发挥巨大能量，2022.1.18
+                </li>
+                <li>
+                    钛媒体:网络互助平台集结，冲到上海‘抗疫一线’，2022.4.19
+                </li>
+            </ol>
+        </div>
+    </section>
+<div id="statement">
+    <p>Copyright&copy;深圳大学&nbsp;传播学院&nbsp;ALL Rights Reserved</p>
+</div>
+    
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.1.0/js/tooltip.js"></script>
+
+
+<script>
+    window._AMapSecurityConfig = {
+        securityJsCode: "f5955401215c539d49dbf74495ce4a03",
+    }
+
+    $('div#cover div.doubleDiv img').css({
+    "transform":`translate(${$('div#cover div.doubleDiv img').width()/4}px,-${$('div#cover div.doubleDiv img').height()*0.45}px)`
+})
+</script>
+
+<script type="text/javascript"
+    src="https://webapi.amap.com/maps?v=1.4.15&key=b920ec5d8fde5f09de80a681753191d3"></script>
+<script src="https://webapi.amap.com/maps?v=2.0&key=b920ec5d8fde5f09de80a681753191d3"></script>
+<script src="https://webapi.amap.com/loca?v=2.0.0&key=b920ec5d8fde5f09de80a681753191d3"></script>
+<script src="https://a.amap.com/Loca/static/loca-v2/demos/mock_data/events.js"></script>
+<script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+<script language="javascript" src="scroll.js"></script>
+<script language="javascript" src="main.js"></script>
+<script language="javascript" src="plot.js"></script>
+<script language="javascript" src="plt.js"></script>
+<script language="javascript" src="mapPlot.js"></script>
+
+
+<script>
+    /* for(let i = 0;i<$("img[src]").length;i++){
+        console.log($("img[src]").eq(i).attr("src"))
+    } */
+
+    
+</script>
+</html>
